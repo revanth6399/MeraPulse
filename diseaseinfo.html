@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MeraPulse</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+ background-color: #d92027;
+  color: white;
+}
+.header {
+  padding: 80px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.header h1 {
+  font-size: 40px;
+}
+/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+<body>
+ <div class="topnav">
+ <a href="{{ url_for('home')}}">Home</a>
+  <a href="{{ url_for('commonman')}}">Commonman</a>
+  <a href="{{ url_for('labtech')}}">Labtech</a>
+  <a href="{{ url_for('diseaseinfo')}}">Diseaseinfo</a>
+  <a href="{{ url_for('aboutus')}}">Aboutus</a>
+</div>
+<div class="header">
+  <h1>Types of Heart Diseases</h1>
+  <p>"With a Healthy Heart.. The Beat goes on"</p>
+</div>
+
+
+    <h2>Coronary Artery Diseases(CAD)</h2>
+    <p>Coronary artery disease, the most common heart disease occurs when bad cholesterol builds up plaque in your heart’s arteries.
+In early stages, it has no symptoms. When plaque gets large enough to block your blood flow, you may feel symptoms like chest pain, shortness of breath, and fatigue. Chest pain is a more common symptom in men than in women.
+Plaque is made up of fat, cholesterol, calcium, and other substances found in the blood. 
+If plaque ruptures, a blood clot forms and blocks an artery to your heart. Because the clot blocks the artery, the blood can't deliver its oxygen to part of your heart, so some of your heart's muscle becomes damaged, perhaps permanently. This is known as a myocardial infarction, or heart attack.
+
+</p>
+    <br>
+    <h2>Heart failure</h2>
+    
+    <p>Your heart is a muscle, and it contracts and relaxes to pump blood continuously to every part of your body. If your heart muscle becomes weak or stiff, your heart valves develop problems, or other health conditions reduce or change your heart's pumping ability, it's called congestive heart failure (CHF). Despite the name, having heart failure doesn't mean that your heart is about to stop or has stopped working.
+With CHF, your heart isn't pumping enough blood to meet your body's needs (low output), or it's pumping at a pressure that's too high, so that fluid backs up from your heart into your lungs, ankles, abdomen, and other parts of your body (fluid congestion). Some people with heart failure can have both low output and congestion.
+Because shortness of breath is the most common symptom of CHF, it's sometimes confused with asthma or a "chronic cough." The shortness of breath associated with CHF is often worse when you're lying flat. You may also notice swelling in your legs or ankles.
+</p>
+<br>
+<h2>Arrhythmia</h2>
+ 
+ <p>Arrhythmia means that your heart beats too fast, too slow, or irregularly. There are many types, but here are a few common ones:
+● Atrial fibrillation/atrial flutter, an irregular and often rapid heartbeat
+● Supraventricular tachycardia, a fast heartbeat
+● Premature ventricular or atrial contractions (PVCs/PACs), skipped heartbeats
+If you are diagnosed with atrial fibrillation/atrial flutter and have certain risk factors (such as congestive heart failure, prior stroke, hypertension, diabetes, or are age 75 or older), you may need to take a blood thinner to reduce your risk of stroke.
+</p>
+<br>
+<h2>Aortic aneurysms</h2>
+ <p>The aorta is the large blood vessel that carries blood from the heart to the rest of the body. An aortic aneurysm is when the aorta enlarges or develops a bulge, due to inherited diseases or longstanding high blood pressure or high cholesterol. Aortic aneurysms can burst, and the consequences can be serious.
+</p>
+<br>
+<h2>Heart infections</h2>
+ <p>Some infections can attack the heart directly. Tuberculosis, viruses, and some other infections can inflame the sac surrounding the heart, causing pericarditis. Some viruses can attack the heart muscle, causing myocarditis, a swelling of the heart muscle that sometimes weakens it. Rarely, bacteria can infect the heart valves, causing endocarditis.
+</p>
+<br>
+<h2>Structural heart disease </h2>
+ <p>It refers to abnormalities of the heart’s structure – including its valves, walls, muscles or blood vessels near the heart. It can be present at birth (congenital) or acquired after birth through infection, wear and tear, or other factors. People living with heart defects and their families need support throughout every age and stage of their life, often requiring ongoing medical care and surgical procedures.
+</p>
+<br>
+<h2>Heart valve disease</h2>
+ <p>Your heart has four valves that work in unison to make sure that blood is pumped in the proper direction. Heart valve disease can occur when one or more of your four heart valves does not work correctly. The causes of heart valve disease include stenosis, or the thickening or fusing of the valve flaps, preventing the valve from fully opening; regurgitation, or leakage of a valve, causing blood to flow back into the heart; and atresia, the congenital absence of a valve opening, preventing blood from flowing through it.
+The signs and symptoms associated with heart valve disease may include the following:
+● A heart murmur (an abnormal sound that a physician can hear when he/she is listening to your heart with a stethoscope)
+● Shortness of breath (which is worsened with activity)
+● Fatigue
+● Swelling in the ankles, feet or legs
+● Elevated neck veins
+
+<br>
+<h2>Angina</h2>
+ <p>Angina is discomfort or pain that occurs when your heart is not getting enough oxygen and nutrients. Angina may be caused by a narrowing of the arteries or muscle spasms in the coronary arteries. These spasms may be induced by cigarette smoke, cold temperatures, strong emotions, and other sources. It is important to note that angina isn't a heart attack and doesn't usually cause permanent heart damage, even though it causes pain.
+The causes of angina are generally atherosclerosis or coronary artery spasm. Angina is not the same for everyone. While it usually occurs when the heart is working harder than normal, such as after a meal or during physical or emotional stress, it can also occur when resting.
+Traditionally, angina occurs primarily in the chest and radiates down the left arm. However, it can be any discomfort that radiates in the chest, across the shoulders, in the upper back, arms (both left and right), neck, throat, or jaw.
+
+</p>
+  </div>
+</div>
+
+</body>
+</html>

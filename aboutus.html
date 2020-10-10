@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+html {
+  box-sizing: border-box;
+   background-color:black;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  color: white;
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #d92027;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #d92027;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+ background-color: #d92027;
+  color: white;
+}
+</style>
+  <div class="topnav">
+  <a href="{{ url_for('home')}}">Home</a>
+  <a href="{{ url_for('commonman')}}">Commonman</a>
+  <a href="{{ url_for('labtech')}}">Labtech</a>
+  <a href="{{ url_for('diseaseinfo')}}">Diseaseinfo</a>
+  <a href="{{ url_for('aboutus')}}">Aboutus</a>
+</div>
+<body>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Pranathi D</h2>
+        <p class="title">1KG16CS067</p>
+         <p>Department:CSE</p>
+         <p>College : KS School of Engineerning and Management</p>
+         <p>Batch: 2016-2020</p>
+        <p>pranathideepak98@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Revanth Chowdary</h2>
+        <p class="title">1KG16CS082</p>
+        <p>Department:CSE</p>
+         <p>College : KS School of Engineerning and Management</p>
+         <p>Batch: 2016-2020</p>
+        <p>revanthchowdary6399@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Saraiyu NR</h2>
+        <p class="title">1KG16CS090</p>
+      <p>Department:CSE</p>
+         <p>College : KS School of Engineerning and Management</p>
+         <p>Batch: 2016-2020</p>
+        <p>sarayunr98@ gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Tejaswi V</h2>
+        <p class="title">1KG16CS115</p>
+       <p>Department:CSE</p>
+         <p>College : KS School of Engineerning and Management</p>
+         <p>Batch: 2016-2020</p>
+        <p>vellankitejaswi77@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
